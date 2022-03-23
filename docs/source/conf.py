@@ -2,7 +2,7 @@
 
 # -- Project information
 
-project = 'NGINX Ingress Manager'
+project = 'NGINX Instance Manager'
 copyright = '2022, NGINX'
 author = 'NGINX'
 
