@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'NGINX Ingress Controller'
+copyright = '2022, NGINX'
+author = 'NGINX'
 
 release = '0.1'
 version = '0.1.0'
