@@ -3,7 +3,7 @@
 Exercise 2.0: Installing NGINX Agent
 ####################################
 
-Objective
+Objectivesss
 =========
 
 Install the ``nginx-agent`` on multiple instances and configure 
