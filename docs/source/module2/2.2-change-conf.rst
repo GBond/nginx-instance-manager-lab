@@ -41,7 +41,13 @@ menu or ssh to ``nginx5`` from the ``nginx-manager`` terminal as the ``centos`` 
     before you run the ``ssh`` command: ``su centos``.
 
 Finally, make sure you have the NGINX Instance Manager user interface open. 
-Select the inventory list and click the editor icon on the right side for ``OSS-Centos``.
+
+.. image:: ./UI-home.png
+
+Click under modules, then instances and click on Ubuntu.
+
+.. image:: ./UI-instances.png
+
 You should see an editor pane and an ``nginx.conf`` file displayed.
 
 .. image:: ./UI-editor.png
@@ -496,6 +502,8 @@ NGINX Instance Manager detects changes made while editing and asks if you want t
 cancel the publish or overwrite what is there.  Since we know what is there, select 
 overwrite.  You should see the ``error2.log`` entry in the editor.
 
+.. image:: ./UI-nginx5-overwrite2.png
+
 Let's look at the ssh session and see what the nginx instance is running now.
 
 .. code-block:: shell-session
@@ -511,4 +519,4 @@ Let's look at the ssh session and see what the nginx instance is running now.
 We have published our change successfully.  This step demonstarted how we 
 can detect changes made outside of NGINX Instance Manager.
 
-
+.. image:: ./UI-nginx5-overwrite3.png
