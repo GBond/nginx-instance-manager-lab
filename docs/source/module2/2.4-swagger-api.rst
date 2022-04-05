@@ -27,7 +27,7 @@ the UDF dashboard.  You can select the ``ACCESS`` menu under
 ``NGINX Manager Server`` and the ``INSTANCE MANAGER UI`` selection.
 This will open the user interface in a new browser tab.
 
-Navigate to the Docs module under the drop down menu - API`` page.  Your window 
+Navigate to the Docs module under the drop down menu.  Your window 
 should look similar to the one below.
 
 .. image:: ./UI-settings-API.png
