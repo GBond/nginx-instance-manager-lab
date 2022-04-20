@@ -13,7 +13,7 @@ Step 1: Open the editor
 
 Select "Instance Manager" from the Launchpad and navigate to the Instances page and find the ``Ubuntu`` instance.  Click on the "..." under the Actions column and select "Edit Config"
 
-.. image:: ./UI-instances-Overview-v3.png
+.. image:: ./UI-instances-v4.png
 
 The editor should look familiar if you are a Visual Studio Code (``vscode``) user.
 
@@ -122,10 +122,11 @@ The analyzer should find the error when you move off the line on the editor menu
 Step 5: Reset the configuration
 -------------------------------
 
-While on the page with the error.  Click the button ``Reset to current``.
+While on the page with the error.  Click the button ``Revert``.
 Notice the configuration file reverted back to the original one.
 
 .. image:: ./UI-editor-revert-v2.png
+
 
 What happened here?  NGINX Instance Manager stores a copy of the configuration from 
 the ``nginx-agent`` at startup, but then uses a copy of the configuration in the database 
