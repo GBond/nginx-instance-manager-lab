@@ -115,9 +115,9 @@ Add the following above the events context:
         include /etc/nginx/conf.d/*.conf;
     }
 
-The analyzer should find the error when you move off the line or click the ``Analyze`` button on the editor menu.
+The analyzer should find the error when you move off the line on the editor menu.
 
-.. image:: ./UI-editor-analyzer.png
+.. image:: ./UI-editor-reset-v2.png
 
 Step 5: Reset the configuration
 -------------------------------
