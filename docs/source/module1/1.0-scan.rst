@@ -1,6 +1,6 @@
-.. _1.3-scan:
+.. _1.0-scan:
 
-Exercise 1.3: Discover new instances
+Exercise 1.0: Discover new instances
 ####################################
 
 Objective
