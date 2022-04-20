@@ -1,6 +1,6 @@
 .. _1.0-scan:
 
-Exercise 1.0: Acces the NIM UI and Scan for instances
+Exercise 1.0: Acces the NIM UI and scan for instances
 #####################################################
 
 Objective
