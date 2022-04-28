@@ -156,7 +156,7 @@ Option 1: website
 Open a new window 
 and navigate to https://www.base64decode.org/
 
-Paste the value of the contents into the window and slect the ``< DEVODE >`` button. 
+Paste the value of the contents into the window and select the ``< DECODE >`` button. 
 The results in the bottom panel should show the default.conf we worked with earlier.
 
 .. image:: ./API-base64-decode.png
@@ -177,21 +177,6 @@ not match your default.conf contents).
         listen 0.0.0.0:8081;
         server_name default_server;
 
-        #@ api
-        location /api/v1 {
-            return 200 "{}\n";
-        }
-
-        #@ corp
-        location /corp/media {
-            return 403 "TLA FTW\n";
-        }
-
-        #@ unimplemented
-        location /unimplemented {
-            return 500 "not implemented\n";
-        }
-    #@ default
         location / {
             root /usr/share/nginx/html;
             # index index.html;
@@ -209,7 +194,7 @@ Using notepad or some editor, copy the decoded values of the
 
 The index lines under the  default location ``/`` can be used. 
 If the ``sample.html`` is uncommented, a sample web page will have 
-some garbage data on the ``OSS-Centos`` instance.  If it is commented 
+some garbage data on the ``ubuntu`` instance.  If it is commented 
 but the ``index.html`` is uncommented, the sample web page will 
 have a default ``Welcome to CentOS`` page instead.
 
