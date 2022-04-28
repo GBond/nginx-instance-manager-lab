@@ -300,8 +300,7 @@ outside of it.
 This step tests this assumption by change a file in the ssh terminal and in the 
 editor at the same time to see what happens if we have multiple edits occur.
 
-Let's use a simple example and focus on the ``nginx.conf`` file and ``NGINX Plus - 2
-``. 
+Let's use a simple example and focus on the ``nginx.conf`` file and ``NGINX Plus - 2``. 
 
 We can simply change the error.log name by inserting a value.
 
@@ -364,7 +363,7 @@ Go ahead and click the ``Save as`` button but do NOT click ``Publish`` yet.
     If you did, simply change the line back to ``error.log`` and Save and Publish.
     Then change it to ``error2.log`` and click ``Save``.
 
-SSH to ``NGINX Plus - 2`` and run the following command to see what changed.
+SSH to ``NGINX Plus-2`` and run the following command to see what changed.
 
 .. code-block:: shell-session
     :emphasize-lines: 1,4
