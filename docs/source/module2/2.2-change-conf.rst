@@ -139,7 +139,7 @@ then publishing them in two different actions.
 Step 4: Adding files
 --------------------
 
-For this step, we are going to use the editor and the ssh session to ``nginx5``.
+For this step, we are going to use the editor and the ssh session to ``NGINX Plus - 2``.
 
 In the editor click the icon ``Add File``.
 
@@ -230,7 +230,7 @@ Confirm the selection.
 
 .. image:: ./UI-nginx5-delete-test.png
 
-Now select ``nginx.conf`` in the include dropdown menu for ``nginx5`` and remove the line we just added for including test.conf.
+Now select ``nginx.conf`` in the include dropdown menu for ``NGINX Plus - 2`` and remove the line we just added for including test.conf.
 ``nginx.conf`` should look like the ``conf`` below.
 
 .. code-block:: nginx
@@ -281,7 +281,7 @@ Click ``Save`` and then click ``Publish``.  This should remove the include file.
     If you have existing automation tools, the removal of files is usually 
     easy to incorporate already.
 
-Navigate to the nginx5 instance with ssh and see if the files is still present.
+Navigate to the NGINX Plus - 2 instance with ssh and see if the files is still present.
 
 .. code-block:: shell-session
     :emphasize-lines: 1
@@ -364,7 +364,7 @@ Go ahead and click the ``Save as`` button but do NOT click ``Publish`` yet.
     If you did, simply change the line back to ``error.log`` and Save and Publish.
     Then change it to ``error2.log`` and click ``Save``.
 
-SSH to ``nginx5`` and run the following command to see what changed.
+SSH to ``NGINX Plus - 2`` and run the following command to see what changed.
 
 .. code-block:: shell-session
     :emphasize-lines: 1,4
