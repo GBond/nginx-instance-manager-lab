@@ -39,7 +39,7 @@ Step 2: Change scan options
 
 The scan tool needs to know the subnet mask and ports you want to scan.  UDF 
 uses the subnet ``10.1.1.0/24``.  Change the subnet to this value and leave the 
-ports as ``80,443``.
+ports as ``80,443,8080,8443``.
 
 .. image:: ./UI-scan-CIDR.png
 
