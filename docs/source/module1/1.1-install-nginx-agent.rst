@@ -1,6 +1,6 @@
-.. _1.4-install-nginx-agent:
+.. _1.1-install-nginx-agent:
 
-Exercise 1.4: Installing NGINX Agent
+Exercise 1.1: Installing NGINX Agent
 ####################################
 
 Objective

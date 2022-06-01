@@ -27,42 +27,33 @@ the UDF dashboard.  You can select the ``ACCESS`` menu under
 ``NGINX Manager Server`` and the ``INSTANCE MANAGER UI`` selection.
 This will open the user interface in a new browser tab.
 
-Navigate to the Settings section and select the API top-level 
-selection to navigate to the ``Settings - API`` page.  Your window 
+Navigate to the Docs module under the drop down menu.  Your window 
 should look similar to the one below.
 
 .. image:: ./UI-settings-API.png
 
-On this page select the ``Open Swagger`` button and you should 
-see a page similar to one below display.  We will use this page 
-for the majority of the lesson.
-
-.. image:: ./UI-swagger-ui.png
+We will use this page for the majority of the lesson.
 
 Step 2: Get information on the system
 -------------------------------------
 
 The swagger-ui page is an easy way to test the API on your ``nginx-manager`` 
-instance.  Let's explore the ``AboutService`` section first.
+instance.  Let's explore the ``Catalogs`` section first.
 
-Click on the ``GET`` button for ``/api/v0/about/system``
+Click on the ``GET`` button for ``/analytics/catalogs/metrics``
 
 .. image:: ./API-try.png
 
 This action just explains the API that is there and the sample information 
 it provides.  We can also use this page to make real API calls.
 
-Click on ``Try it out`` at the top right part of the API section.
+Click on ``Execute`` button and scroll down to see if we captured some results.
 
 .. image:: ./API-execute.png
 
 Notice we have a curl command example.  You can copy and paste that line 
 into an instance with ``curl`` installed and try it yourself.  The page 
 allows us to try it also.
-
-Click on ``execute`` and scroll down to see if we captured some results.
-
-.. image:: ./API-about-results.png
 
 Notice how we now see information in the details pane.  If you look closely 
 you can see this is actual data from our installed instance.
@@ -165,7 +156,7 @@ Option 1: website
 Open a new window 
 and navigate to https://www.base64decode.org/
 
-Paste the value of the contents into the window and slect the ``< DEVODE >`` button. 
+Paste the value of the contents into the window and select the ``< DECODE >`` button. 
 The results in the bottom panel should show the default.conf we worked with earlier.
 
 .. image:: ./API-base64-decode.png
@@ -186,21 +177,6 @@ not match your default.conf contents).
         listen 0.0.0.0:8081;
         server_name default_server;
 
-        #@ api
-        location /api/v1 {
-            return 200 "{}\n";
-        }
-
-        #@ corp
-        location /corp/media {
-            return 403 "TLA FTW\n";
-        }
-
-        #@ unimplemented
-        location /unimplemented {
-            return 500 "not implemented\n";
-        }
-    #@ default
         location / {
             root /usr/share/nginx/html;
             # index index.html;
@@ -218,7 +194,7 @@ Using notepad or some editor, copy the decoded values of the
 
 The index lines under the  default location ``/`` can be used. 
 If the ``sample.html`` is uncommented, a sample web page will have 
-some garbage data on the ``OSS-Centos`` instance.  If it is commented 
+some garbage data on the ``ubuntu`` instance.  If it is commented 
 but the ``index.html`` is uncommented, the sample web page will 
 have a default ``Welcome to CentOS`` page instead.
 

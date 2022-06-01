@@ -1,7 +1,7 @@
-.. _1.3-scan:
+.. _1.0-scan:
 
-Exercise 1.3: Discover new instances
-####################################
+Exercise 1.0: Acces the NIM UI and scan for instances
+#####################################################
 
 Objective
 =========
@@ -13,7 +13,7 @@ Guide
 =====
 
 The lab environment contains 5 instances of NGINX (not including the 
-repository server and the nginx-manager server). We will use the ``ngxscan`` 
+repository server and the nginx-manager server). We will use the ``NIM Scan`` feature
 to discover the instances and list CVE information.
 
 The scan uses NMAP stealth scan to look at ports the web servers or load balancers 
