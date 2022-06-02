@@ -34,12 +34,9 @@ If prompted, select yes for trusting the ssh connection in your terminal.
 
 .. image:: ./Add-SSH.png
 
-.. code-block:: shell-session
-   :emphasize-lines: 1
+``NOTE: If you haven't added SSH keys to UDF - Use the WebShell``
 
-   pwd
-   /home/centos
-
+.. image:: ./'Access-SSH 2.jpg'
 
 Step 2: Review the ports used
 -----------------------------
