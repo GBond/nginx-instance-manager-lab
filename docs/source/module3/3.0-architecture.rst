@@ -36,7 +36,7 @@ If prompted, select yes for trusting the ssh connection in your terminal.
 
 ``NOTE: If you haven't added SSH keys to UDF - Use the WebShell``
 
-.. image:: ./Access-SSH 2.jpg
+.. image:: ./Access-SSH-2.jpg
 
 Step 2: Review the ports used
 -----------------------------
