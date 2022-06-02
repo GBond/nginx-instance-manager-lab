@@ -29,8 +29,14 @@ the ``Instance Manager UI`` option under ``ACCESS``.
 
 .. image:: ./UDF-select-ui.png
 
-You should see a loading screen and then a user interface for NGINX Instance Manager appear. 
-Use the left navigation pane to select "Scan" and proceed to Step 2.
+
+To sign in use the username ``admin`` and password ``NIM123!@#``
+
+.. image:: ./UDF-sign-in.png
+
+You should see a Welcome to NGINX Management Suite home screen, select Instance Manager, then click on the left navigation pane to select “Scan” and proceed to Step 2.
+
+.. image:: ./UDF-welcome.png
 
 .. image:: ./UI-select-scan.png
 
@@ -53,7 +59,7 @@ ports as ``80,443,8080,8443``.
 Step 3: Run a scan
 ------------------
 
-Click on the ``Start New Scan`` button and let the scan run.  You should see 
+Click on the ``Scan`` button and let the scan run.  You should see 
 some information on the screen as the scan runs.
 
 .. image:: ./UI-scan-running.png
@@ -69,14 +75,14 @@ Step 4: Review results
 ----------------------
 
 The results of the scan have more instances than we described in the lab architecture.  
-UDF has a built-in node.js server listening on ``10.1.1.254``.  In addition, we have captured 
+UDF has a built-in node.js server listening on ``10.1.1.4``.  In addition, we have captured 
 the repository server on ``10.1.1.10`` and the ``nginx-manager`` server on ``10.1.1.4``.
 
 You should also notice there is an outdated NGINX server on ``10.1.1.9`` running NGINX ``1.7.1``. 
 The CVEs icon shows an exclamation point within a yellow circle.  This indicates the instance has 
 security vulnerabilities.  At the time of this writing, it should show ``7`` next to the icon.
 
-There should be a black circle with a minus sign next to the node.js instance.  This indicates that 
+There should be a black circle with a minus sign next to the node.js instance. This indicates that 
 there was no CVE matching done or found for this instance.
 
 The CVE list isn't meant to replace other security tools.  It is meant to alert you to possible 
@@ -105,8 +111,7 @@ For module 2, we will focus on managing 4 instances (``10.1.1.5-10.1.1.8``).
 Step 6: View install instructions
 ---------------------------------
 
-Next to the Discovered Instances there is a plus symbol under the Actions column.  Click 
-the icon and a window will give you instructions on installing the agent for the instance. 
+Under the status column there are two states “Managed” and “Unmanaged” .  Click on any of the “Unmanaged” instances and a slide out dialog box will provide you with instructions on how to install the nginx-agent on the server. 
 
 .. image:: ./UI-scan-install.png
 
