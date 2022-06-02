@@ -28,11 +28,11 @@ Navigate to the ``nginx-manager`` instance as ``ubuntu`` and use the home direct
 Use the SSH menu option to beceome the ubuntu user.  If you use the web-shell it 
 defaults to the root user.  To follow best practice, please use the ubuntu user.
 
-.. image:: ../module1/UDF-select-ssh.png
+.. image:: ../module1/Access-SSH.jpg
 
 If prompted, select yes for trusting the ssh connection in your terminal.
 
-.. image:: ../module1/UDF-ssh.png
+.. image:: ../module1/Add-SSH.png
 
 .. code-block:: shell-session
    :emphasize-lines: 1
