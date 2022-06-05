@@ -44,9 +44,9 @@ Step 2: Review the ports used
 Let's use netstat (you may need to install this on your own system) on the ``nginx-manager`` 
 instance.  We will list all ports and the processes, then use grep to filter the list.
 
-``sudo netstat -tulpn | grep nginx``
+  sudo netstat -tulpn | grep nginx
 
-``tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      726/nginx: master p`` 
+  tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      726/nginx: master p::
 
 Nginx Instance Manager ingests data from the agents and exposes the UI via TCP 443.
 
