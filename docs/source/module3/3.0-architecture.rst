@@ -13,11 +13,18 @@ externally and for agent and server communication.
 Guide
 =====
 
-NGINX Instance Manager uses an agent and server communiction path for 
+NGINX Instance Manager (NIM) uses an agent and server communication path for 
 managing NGINX Instances.  The ``nginx-agent`` communicates with the 
-``nginx-manager`` over gRPC.
+``nginx-manager`` over gRPC (TCP 443).
 
-.. image:: ./arch-high-level.png
+NIM uses ClickHouse as an analytics time-series database.
+ClicHouse can be installed with NIM in the same server, or can be accessed in an external installation.
+
+Various Automation and CI/CD pipelines can use the NIM API to perform various actions.
+
+NIM offers options to feed data and metrics to external platforms like Prometheus and visualization tools like Grafana.
+
+.. image:: ./NIM-diagram.jpeg
 
 
 Step 1
@@ -44,9 +51,9 @@ Step 2: Review the ports used
 Let's use netstat (you may need to install this on your own system) on the ``nginx-manager`` 
 instance.  We will list all ports and the processes, then use grep to filter the list.
 
-``sudo netstat -tulpn | grep nginx``
+  sudo netstat -tulpn | grep nginx
 
-``tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      726/nginx: master p`` 
+  tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      726/nginx: master p::
 
 Nginx Instance Manager ingests data from the agents and exposes the UI via TCP 443.
 
