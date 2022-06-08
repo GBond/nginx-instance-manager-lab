@@ -108,7 +108,7 @@ and push the ``Try it out`` button.
 
 In the parameters section, the field ``systemUid`` and ``uid`` are in bold and 
 have a red ``*`` indicating it is required.  The GET command requires 
-we enter the ``systemUid``and ``uid``.
+we enter the ``systemUid`` and ``uid``.
 
 Paste or type in the ``systemUid`` and ``uid`` from Step 3 and select ``Execute``
 
