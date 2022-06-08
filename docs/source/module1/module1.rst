@@ -8,4 +8,3 @@ functionality to find NGINX instances on the network.
    :maxdepth: 1
 
    1.0-scan
-   1.1-install-nginx-agent

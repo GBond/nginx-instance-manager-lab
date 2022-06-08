@@ -3,11 +3,10 @@
 Exercise 2.0: Installing NGINX Agent
 ####################################
 
-Objectivesss
+Objective
 =========
 
-Install the ``nginx-agent`` on multiple instances and configure 
-the agent to work with existing NGINX instances and ``nginx-manager``
+Install the ``nginx-agent`` and configure it to work with existing NGINX instance.
 
 Guide
 =====
@@ -19,6 +18,8 @@ follows a process that is very similar to installing
 Step 1
 ------
 We are going to use NGINX Plus - 3 Server 10.1.1.9 and install the nginx-agent to manage the NGINX instances running on this host. Access the deployment tab and select the NGINX Plus – 3 Server Access menu then click WEB SHELL.
+
+.. image:: ./UDF-nginx5-sample.png
 
 Copy the below command syntax which you will use to install the nginx-agent:
 
@@ -56,7 +57,7 @@ Navigate to the Instances page and look for the instance we added.
 Notice how we have columns that show Hostname and Type. 
 Our instances are named according to the Operating System and NGINX type they run.
 
-Let's focus on the first instance ``ubuntu`` which is running NGINX 1.21.3. Click the Hostname and more information on the instance will appear, scroll down to Network Interface and notice this is our 10.1.1.9 instance.
+Let's focus on the instance ``ubuntu`` which is running NGINX 1.21.3. Click the Hostname and more information on the instance will appear, scroll down to Network Interface and notice this is our 10.1.1.9 instance.
 
 .. image:: ./UI-details.png
 
