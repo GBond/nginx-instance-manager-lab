@@ -11,7 +11,7 @@ Use the NGINX Instance Manager User Interface for this exercise and explore how 
 Step 1: Open the editor
 -----------------------
 
-Select "Instance Manager" from the Launchpad and navigate to the Instances page and find the ``Ubuntu`` instance.  Click on the "..." under the Actions column and select "Edit Config"
+Select "Instance Manager" from the Launchpad and navigate to the Instances page and find the ``Ubuntu`` instance with the newly installed agent (10.1.1.9).  Click on the "..." under the Actions column and select "Edit Config"
 
 .. image:: ./UI-instances-v4.png
 
@@ -25,15 +25,15 @@ Step 2: Try a shortcut
 ----------------------
 
 NGINX Instance Manager uses the monaco-editor project, which is also the editor Visual Studio Code uses.
-This allows many similar functions to work.  Let's try the search and replace function.
+This allows many similar functions to work. Let's try the search and replace function.
 
-Click in the editor window and press the key combination for ``find``.
+Click inside the editor window and press the key combination for ``find``.
 
 .. note::
 
-    For Mac users, this is the ``Command-F` key, for Windows users, the ``CTRL-F`` key.
+    For Mac users, this is the ``Command-F`` key, for Windows users, the ``CTRL-F`` key.
 
-Click the down arrow and notice the ``replace`` function is there.
+Click the arrow to the left of find and notice the ``replace`` function is there.
 
 .. image:: ./UI-editor-find-v2.png
 
