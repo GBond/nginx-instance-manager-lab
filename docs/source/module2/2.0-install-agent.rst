@@ -6,8 +6,7 @@ Exercise 2.0: Installing NGINX Agent
 Objectivesss
 =========
 
-Install the ``nginx-agent`` on multiple instances and configure 
-the agent to work with existing NGINX instances and ``nginx-manager``
+Install the ``nginx-agent`` and configure it to work with existing NGINX instance and ``nginx-manager``.
 
 Guide
 =====
